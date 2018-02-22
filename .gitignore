@@ -1,22 +1,20 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Ignore populated variable files
+terraform/terraform.tfvars
+terraform/variables.tf
+terraform/rds-variables.tf
+terraform/sg-variables.tf
+terraform/vpc-variables.tf
+terraform/*.state
+terraform/*.plan
+# ignore any tmp directories anyone might create
+tmp
+# ignore any keys that may end up in the repo
+*pub
+*pem
+# ignore existing terriform states
+*tfstate*
+# Ignore OS files and editor files
+*~
+*.swp
+*.swo
+.DS_Store
